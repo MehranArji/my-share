@@ -65,7 +65,7 @@ const App: FC = () => {
                     <div key={category.id}>
                         <CategoryTitle>{category.name}</CategoryTitle>
 
-                        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+                        <div className="grid gap-2 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-4">
                             {category.items
                                 .filter((item) =>
                                     item.name.includes(query.trim())
